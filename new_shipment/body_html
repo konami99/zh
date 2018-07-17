@@ -1,5 +1,5 @@
 {% if partial_shipment %}
-  <p>你的訂單已部分送出</p>
+  <h1>你的訂單已部分送出</h1>
 
   <p>{{email_greeting_identifier}}你好，</p>
 
@@ -39,7 +39,7 @@
   <p>*如訂單並非以信用卡或Paypal付款，客戶服務團隊會就退款程序直接聯絡你。</p>
 
 {% else %}
-  <p>你的訂單快要抵達!</p>
+  <h1>你的訂單快要抵達!</h1>
 
   <p>{{email_greeting_identifier}}你好,</p>
 
