@@ -18,7 +18,7 @@
     Carrier Phone Number: {{courier_contact_destination}}
     <br/>
     Carrier Tracking Number: {{carrier_shipment_reference}}
-  <strong>
+  </strong>
 </p>
 
 <a href={{tracking_url}}>Track Delivery</a>

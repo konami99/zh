@@ -52,12 +52,12 @@
       {{receiver_full_name}}<br>
       {{delivery_address}}<br>
       {{delivery_suburb}}, {{delivery_state}}, {{delivery_postcode}}
-    <strong>
+    </strong>
   </p>
 
   <p>點擊以下網址即可緊貼最新送貨詳情.</p>
 
-  <p>Track Delivery: {{tracking_url}}</p>
+  <p><a href={{tracking_url}}>Track Delivery</a></p>
 
   <p>如需更改送貨選擇或有任何查詢，請聯絡# {{courier_name}} 並提供以下資料:</p>
 
