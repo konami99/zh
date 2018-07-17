@@ -1,8 +1,8 @@
 <h1>你的訂單已被退回</h1>
 
-<p>{{email_greeting_identifier}}你好,</p>
+<p>{{email_greeting_identifier}} 你好,</p>
 
-<p>{{courier_name}}已將包裹退回至寄件人。退貨原因為 "{{returned_to_sender_description}}"。</p>
+<p>{{courier_name}} 已將包裹退回至寄件人。退貨原因為 "{{returned_to_sender_description}}"。</p>
 
 <p>請聯絡 {{merchant_name}} 並提供以下資料，安排再次送貨:</p>
 

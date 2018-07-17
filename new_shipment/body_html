@@ -1,7 +1,7 @@
 {% if partial_shipment %}
   <h1>你的訂單已部分送出</h1>
 
-  <p>{{email_greeting_identifier}}你好，</p>
+  <p>{{email_greeting_identifier}} 你好，</p>
 
   <p>感謝你的訂單！對不起，訂單中的某款產品缺貨，為此我們衷心致歉。如你購買或兌換此產品，退款*或積分會於6-10個工作天內退回你的賬戶。</p>
 
@@ -30,18 +30,18 @@
 
   <p>如有不便，敬請原諒。感謝你的一直支持</p>
 
-  <p>{{merchant_name}}上</p>
+  <p>{{merchant_name}} 上</p>
 
   <p>點擊以下網址即可緊貼最新送貨詳情。</p>
 
-  <p>Track Delivery: {{tracking_url}}</p>
+  <p><a href={{tracking_url}}>Track Delivery</a></p>
 
   <p>*如訂單並非以信用卡或Paypal付款，客戶服務團隊會就退款程序直接聯絡你。</p>
 
 {% else %}
   <h1>你的訂單快要抵達!</h1>
 
-  <p>{{email_greeting_identifier}}你好,</p>
+  <p>{{email_greeting_identifier}} 你好,</p>
 
   <p>你的 {{merchant_name}} 訂單已經送出,{% if estimated_delivery_date %} 預計送抵日期為 {{delivery_day_month_name}}{% endif %}.</p>
 
@@ -71,5 +71,5 @@
 
   <p>如速遞公司無法解決你的問題，請直接聯絡{{merchant_name}}</p>
 
-  <p>{{merchant_name}}上</p>
+  <p>{{merchant_name}} 上</p>
 {% endif %}
