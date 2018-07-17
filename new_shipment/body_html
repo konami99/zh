@@ -1,0 +1,71 @@
+{% if partial_shipment %}
+  <p>你的訂單已部分送出</p>
+
+  <p>{{email_greeting_identifier}}你好，</p>
+
+  <p>感謝你的訂單！對不起，訂單中的某款產品缺貨，為此我們衷心致歉。如你購買或兌換此產品，退款*或積分會於6-10個工作天內退回你的賬戶。</p>
+
+  <p>以下是訂單的送貨詳情。請保留此電郵以供日後參考。</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>訂購數量</th>
+        <th>產品ID</th>
+        <th>產品名稱</th>
+        <th>寄出數量</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for product in products %}
+      <tr>
+        <td>{{product.quantity}}</td>
+        <td>{{product.sku}}</td>
+        <td>{{product.title}}</td>
+        <td>{{product.packed}}/{{product.quantity}}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+
+  <p>如有不便，敬請原諒。感謝你的一直支持</p>
+
+  <p>{{merchant_name}}上</p>
+
+  <p>點擊以下網址即可緊貼最新送貨詳情。</p>
+
+  <p>Track Delivery: {{tracking_url}}</p>
+
+  <p>*如訂單並非以信用卡或Paypal付款，客戶服務團隊會就退款程序直接聯絡你。</p>
+
+{% else %}
+  <p>你的訂單快要抵達!</p>
+
+  <p>{{email_greeting_identifier}}你好,</p>
+
+  <p>你的 {{merchant_name}} 訂單已經送出,{% if estimated_delivery_date %} 預計送抵日期為 {{delivery_day_month_name}}{% endif %}.</p>
+
+  <p>派送訂單的速遞公司為{{courier_name}，送貨地址為:</p>
+
+  <p>
+    {{receiver_full_name}}<br>
+    {{delivery_address}}<br>
+    {{delivery_suburb}}, {{delivery_state}}, {{delivery_postcode}}
+  </p>
+
+  <p>點擊以下網址即可緊貼最新送貨詳情.</p>
+
+  <p>Track Delivery: {{tracking_url}}</p>
+
+  <p>如需更改送貨選擇或有任何查詢，請聯絡# {{courier_name}} 並提供以下資料:</p>
+
+  <p>
+    速遞: {{courier_name}}<br>
+    速遞聯絡電話: {{courier_contact_destination}}<br>
+    速遞追蹤號碼: {{carrier_shipment_reference}}
+  </p>
+
+  <p>如速遞公司無法解決你的問題，請直接聯絡{{merchant_name}}</p>
+
+  <p>{{merchant_name}}上</p>
+{end_if}

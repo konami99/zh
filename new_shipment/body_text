@@ -9,7 +9,7 @@
 
   訂購數量 產品ID 產品名稱 寄出數量
   {% for product in products %}
-    product.quantity product.sku product.title product.packed/product.quantity
+    {{product.quantity}} {{product.sku}} {{product.title}} {{product.packed}}/{{product.quantity}}
   {% endfor %}
 
   如有不便，敬請原諒。感謝你的一直支持
