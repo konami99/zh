@@ -10,4 +10,4 @@
 	速遞聯絡電話: {{courier_contact_destination}}
 	速遞追蹤號碼: {{carrier_shipment_reference}}
 
-{Merchant}上
+{{merchant_name}}上
