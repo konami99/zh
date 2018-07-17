@@ -1,1 +1,1 @@
-"Great news! Your {{merchant_name_short}} order is on its way. {% if delivery_time_window %}Your order will be delivered on {{timeslot_in_sms}}<% elsif estimated_delivery_date %>Your #{notificationable.decorate.estimated_delivery_date<% endif %>. Track it: #{tracking_url}"
+好消息！你的{{merchant_name}} 訂單正在派送中。追蹤訂單：{{tracking_url}}

@@ -1,1 +1,1 @@
-Hi {{receiver_first_name}}, your {{merchant_name_short}} order couldnt be delivered today. Its been dropped off at a collection point, for info: #{tracking_url_short}"
+你的{{merchant_name}} 訂單已送抵取貨點。領取包裹的更多資訊：{{tracking_url}}
