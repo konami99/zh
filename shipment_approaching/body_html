@@ -1,0 +1,21 @@
+<h1>你的訂單即將送抵</h1>
+
+<p>{{email_greeting_identifier}}你好,</p>
+
+<p>你的{{courier_name}}速遞員即將派送你的{{merchant_name}}訂單。</p>
+
+<p>點擊以下網址即可緊貼最新送貨詳情及查閱{{courier_name}}的聯絡資料。</p>
+
+<p>Track Delivery: {{track}}</p>
+
+<p>如需更改送貨選擇或有任何查詢，請聯絡# {{courier_name}} 並提供以下資料:</p>
+
+<p>
+	速遞: {{courier_name}}<br>
+	速遞聯絡電話: {{courier_contact_destination}}<br>
+	速遞追蹤號碼: {{carrier_shipment_reference}}
+</p>
+
+<p>如速遞公司無法解決你的問題，請直接聯絡{{merchant_name}}</p>
+
+<p>{{merchant_name}}上</p>
