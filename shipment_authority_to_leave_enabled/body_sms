@@ -1,0 +1,1 @@
+Hi {{receiver_first_name}}, get ready! Your order from {{merchant_name_short} is onboard for delivery! Track progress: #{tracking_url_short}

@@ -1,0 +1,18 @@
+Your package is now awaiting collection.
+
+Hello {{email_greeting_identifier}},
+
+Unfortunately {{courier_name}} could not complete your delivery today.
+{% if collection_location %}
+{{courier.name}} has informed us that your package has been safely dropped off to {{collection_location}} for immediate collection.
+{% else %}
+Your delivery driver should have left a card with details on the location where your package can be collected from. For more information, please contact the carrier directly quoting the details below:
+{% endif %}
+
+  Carrier: {{courier_name}}
+  Carrier Phone Number: {{courier_contact_destination}}
+  Carrier Tracking Number: {{carrier_shipment_reference}}
+
+View more tracking history and collection details below.
+
+Tracking & Collection: {{tracking_url}}

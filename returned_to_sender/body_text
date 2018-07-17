@@ -1,0 +1,13 @@
+你的訂單已被退回
+
+{{email_greeting_identifier}}你好,
+
+{{courier_name}}已將包裹退回至寄件人。退貨原因為 "{{returned_to_sender_description}}"。
+
+請聯絡 {{merchant_name}} 並提供以下資料，安排再次送貨:
+
+	速遞: {{courier_name}}
+	速遞聯絡電話: {{courier_contact_destination}}
+	速遞追蹤號碼: {{carrier_shipment_reference}}
+
+{Merchant}上

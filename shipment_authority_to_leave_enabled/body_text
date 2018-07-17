@@ -1,0 +1,23 @@
+成功授權免簽收派送包裹.
+
+{{email_greeting_identifier}}你好,
+
+你已成功授權速遞公司免簽收派送包裹！{{courier_name}} 會將包裹安全送抵以下地址：
+
+  {{receiver_full_name}}
+  {{delivery_address}}
+  {{delivery_suburb}}, {{delivery_state}}, {{delivery_postcode}}
+
+點擊以下網址即可緊貼最新送貨詳情:
+
+Track Delivery: {{tracking_url}}
+
+如需更改送貨選擇或有任何查詢，請聯絡# {{courier_name}} 並提供以下資料:
+
+	速遞: {{courier_name}}
+	速遞聯絡電話: {{courier_contact_destination}}
+	速遞追蹤號碼: {{carrier_shipment_reference}}
+
+如速遞公司無法解決你的問題，請直接聯絡{{merchant_name}}
+
+{{merchant_name}}上

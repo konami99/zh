@@ -1,0 +1,13 @@
+訂單已送抵
+
+{{email_greeting_identifier}}你好,
+
+希望你對此 {{merchant_name}} 訂單感到滿意。
+
+是次送貨體驗如何?
+
+Rate Your Experience: {{rate_url}}
+
+你的意見有助我們改善服務，提供更佳購物體驗。
+
+{Merchant}上

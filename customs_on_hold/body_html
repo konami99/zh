@@ -1,0 +1,24 @@
+<h1>Your order is being held in customs</h1>
+
+<p>Hello {{email_greeting_identifier}},</p>
+
+<p>
+  We have just been advised that your local customs office requires
+  more information in order to clear your package for delivery.
+</p>
+
+<p>
+ For more information, please contact the carrier directly quoting the details below:
+</p>
+
+<p>
+  <strong style="font-weight:bold;">
+    Carrier: {{courier_name}}
+    <br/>
+    Carrier Phone Number: {{courier_contact_destination}}
+    <br/>
+    Carrier Tracking Number: {{carrier_shipment_reference}}
+  <strong>
+</p>
+
+<a href={{tracking_url}}>Track Delivery</a>

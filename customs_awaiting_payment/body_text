@@ -1,0 +1,13 @@
+Your order is being held in customs.
+
+Hello {{email_greeting_identifier}},
+
+We have just been advised that your local customs office requires payment of outstanding duties and/or taxes in order to clear your package for delivery.
+
+For more information, please contact the carrier directly quoting the details below:
+
+  Carrier: {{courier_name}}
+  Carrier Phone Number: {{courier_contact_destination}}
+  Carrier Tracking Number: {{carrier_shipment_reference}}
+
+Track Delivery: {{tracking_url}}

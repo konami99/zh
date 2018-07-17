@@ -1,0 +1,45 @@
+<h1>Sorry, your package couldn’t be delivered</h1>
+
+<p>Hello {{email_greeting_identifier}},</p>
+
+<p>
+  {{courier_name}} tried to deliver your package from {{merchant_name}} today but the driver was unable to complete it.
+</p>
+
+<p>
+  Your delivery driver should have left a card with details on how to re-schedule your delivery, or the location where your package can be collected.
+</p>
+
+<p>
+  If you can’t find your card, please contact the carrier directly quoting the details below:
+</p>
+
+<p>
+  <strong style="font-weight:bold;">
+    Carrier: {{courier_name}}
+    <br/>
+    Carrier Phone Number: {{courier_contact_destination}}
+    <br/>
+    Carrier Tracking Number: {{carrier_shipment_reference}}
+  <strong>
+</p>
+
+<p>
+  {{courier_name}} will hold onto your package for 5 business days. If re-delivery or collection is not arranged by then, your package will be returned to {{merchant_name}}.
+</p>
+
+<h2>Frequently Asked Questions</h2>
+<ul class="link_list">
+  <li>
+    <a href="http://support.shippit.com/hc/en-us/articles/216064937-Why-didn-t-the-driver-just-leave-my-package-at-my-address-" >Why didn't the driver just leave my package at my address?</a>
+  </li>
+  <li>
+    <a href="http://support.shippit.com/hc/en-us/articles/115012570688-Do-I-need-to-be-home-to-sign-for-my-parcel-">Do I need to be home to receive my parcel?</a>
+  </li>
+  <li>
+    <a href="http://support.shippit.com/hc/en-us/articles/209382727-I-missed-my-delivery-how-do-I-get-it-now-">I missed my delivery - how do I get it now?</a>
+  </li>
+  <li>
+    <a href="http://support.shippit.com/">Find more answers at Shippit Support</a>
+  </li>
+</ul>

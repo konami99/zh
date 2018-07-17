@@ -1,0 +1,51 @@
+{% if partial_shipment %}
+  你的訂單已部分送出
+
+  {{email_greeting_identifier}}你好，
+
+  感謝你的訂單！對不起，訂單中的某款產品缺貨，為此我們衷心致歉。如你購買或兌換此產品，退款*或積分會於6-10個工作天內退回你的賬戶。
+
+  以下是訂單的送貨詳情。請保留此電郵以供日後參考。
+
+  訂購數量 產品ID 產品名稱 寄出數量
+  {% for product in products %}
+    product.quantity product.sku product.title product.packed/product.quantity
+  {% endfor %}
+
+  如有不便，敬請原諒。感謝你的一直支持
+
+  {{merchant_name}}上
+
+  點擊以下網址即可緊貼最新送貨詳情.
+
+  Track Delivery: {{tracking_url}}
+
+  *如訂單並非以信用卡或Paypal付款，客戶服務團隊會就退款程序直接聯絡你。
+
+{% else %}
+  你的訂單快要抵達!
+
+  {{email_greeting_identifier}}你好,
+
+  你的 {{merchant_name}} 訂單已經送出,{% if estimated_delivery_date %} 預計送抵日期為 {{delivery_day_month_name}}{% endif %}.
+
+  派送訂單的速遞公司為{{courier_name}，送貨地址為:
+
+    {{receiver_full_name}}
+    {{delivery_address}}
+    {{delivery_suburb}}, {{delivery_state}}, {{delivery_postcode}}
+
+  點擊以下網址即可緊貼最新送貨詳情.
+
+  Track Delivery: {{tracking_url}}
+
+  如需更改送貨選擇或有任何查詢，請聯絡# {{courier_name}} 並提供以下資料:
+
+    速遞: {{courier_name}}
+    速遞聯絡電話: {{courier_contact_destination}}
+    速遞追蹤號碼: {{carrier_shipment_reference}}
+
+  如速遞公司無法解決你的問題，請直接聯絡{{merchant_name}}
+
+  {{merchant_name}}上
+{end_if}

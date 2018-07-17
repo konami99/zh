@@ -1,0 +1,29 @@
+Sorry, your package couldn’t be delivered.
+
+Hello {{email_greeting_identifier}},
+
+{{courier_name}} tried to deliver your package from {{merchant_name}} today but the driver was unable to complete it.
+
+Your delivery driver should have left a card with details on how to re-schedule your delivery, or the location where your package can be collected.
+
+If you can’t find your card, please contact the carrier directly quoting the details below:
+
+  Carrier: {{courier_name}}
+  Carrier Phone Number: {{courier_contact_destination}}
+  Carrier Tracking Number: {{carrier_shipment_reference}}
+
+{{courier_name}} will hold onto your package for 5 business days. If re-delivery or collection is not arranged by then, your package will be returned to {{merchant_name}}.
+
+Frequently Asked Questions
+--------------------------
+* Why didn't the driver just leave my package at my address?
+  http://support.shippit.com/hc/en-us/articles/216064937-Why-didn-t-the-driver-just-leave-my-package-at-my-address-
+
+* Do I need to be home to receive my parcel?
+  http://support.shippit.com/hc/en-us/articles/115012570688-Do-I-need-to-be-home-to-sign-for-my-parcel-
+
+* I missed my delivery - how do I get it now?
+  http://support.shippit.com/hc/en-us/articles/209382727-I-missed-my-delivery-how-do-I-get-it-now-
+
+* Find more answers at Shippit Support
+  http://support.shippit.com/
