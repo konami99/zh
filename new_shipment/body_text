@@ -1,4 +1,4 @@
-{% if partial_shipment %}
+{% if partially_packed %}
   你的訂單已部分送出
 
   {{email_greeting_identifier}}你好，
