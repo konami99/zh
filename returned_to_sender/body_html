@@ -7,9 +7,11 @@
 <p>請聯絡 {{merchant_name}} 並提供以下資料，安排再次送貨:</p>
 
 <p>
-	速遞: {{courier_name}}<br>
-	速遞聯絡電話: {{courier_contact_destination}}<br>
-	速遞追蹤號碼: {{carrier_shipment_reference}}
+	<strong style="font-weight:bold;">
+		速遞: {{courier_name}}<br>
+		速遞聯絡電話: {{courier_contact_destination}}<br>
+		速遞追蹤號碼: {{carrier_shipment_reference}}
+	</strong>
 </p>
 
-{{merchant_name}}上
+<p>{{merchant_name}}上</p>

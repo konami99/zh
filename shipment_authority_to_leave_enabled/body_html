@@ -5,9 +5,11 @@
 <p>你已成功授權速遞公司免簽收派送包裹！{{courier_name}} 會將包裹安全送抵以下地址：</p>
 
 <p>
-  {{receiver_full_name}}<br>
-  {{delivery_address}}<br>
-  {{delivery_suburb}}, {{delivery_state}}, {{delivery_postcode}}
+  <strong style="font-weight:bold;">
+    {{receiver_full_name}}<br>
+    {{delivery_address}}<br>
+    {{delivery_suburb}}, {{delivery_state}}, {{delivery_postcode}}
+  </strong>
 </p>
 
 <p>點擊以下網址即可緊貼最新送貨詳情:</p>

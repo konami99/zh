@@ -11,9 +11,11 @@
 <p>如需更改送貨選擇或有任何查詢，請聯絡{{courier_name}} 並提供以下資料：</p>
 
 <p>
-  速遞: {{courier_name}}<br>
-	速遞聯絡電話: {{courier_contact_destination}}<br>
-	速遞追蹤號碼: {{carrier_shipment_reference}}
+	<strong style="font-weight:bold;">
+		速遞: {{courier_name}}<br>
+		速遞聯絡電話: {{courier_contact_destination}}<br>
+		速遞追蹤號碼: {{carrier_shipment_reference}}
+	</strong>
 </p>
 
 <p>如速遞公司無法解決你的問題，請直接聯絡{{merchant_name}}。</p>
