@@ -1,18 +1,18 @@
-Your package is now awaiting collection.
+你的訂單正在等待領取
 
-Hello {{email_greeting_identifier}},
+{{email_greeting_identifier}} 你好，
 
-Unfortunately {{courier_name}} could not complete your delivery today.
-{% if collection_location %}
-{{courier.name}} has informed us that your package has been safely dropped off to {{collection_location}} for immediate collection.
-{% else %}
-Your delivery driver should have left a card with details on the location where your package can be collected from. For more information, please contact the carrier directly quoting the details below:
-{% endif %}
+{{courier_name}} 已將包裹安全送抵 {{collection_location}}。取貨點從早到晚以及於週末均提供服務，取貨更加方便。
 
-  Carrier: {{courier_name}}
-  Carrier Phone Number: {{courier_contact_destination}}
-  Carrier Tracking Number: {{carrier_shipment_reference}}
+你現可到以下地點領取包裹：
+{{collection_location}}
 
-View more tracking history and collection details below.
+如需更改送貨選擇或有任何查詢，請聯絡{{courier_name}} 並提供以下資料：
 
-Tracking & Collection: {{tracking_url}}
+  速遞: {{courier_name}}
+	速遞聯絡電話: {{courier_contact_destination}}
+	速遞追蹤號碼: {{carrier_shipment_reference}}
+
+如速遞公司無法解決你的問題，請直接聯絡{{merchant_name}}。
+
+{{merchant_name}}上

@@ -1,34 +1,20 @@
-<h1>Your package is now awaiting collection</h1>
+<h1>Your package is now awaiting collection<h1>
 
-<p>Hello {{email_greeting_identifier}},</p>
+<p>Hello {{customer_name}},</p>
 
-<p>
-  Unfortunately {{courier_name}} could not complete your delivery today.
-</p>
+<p>Unfortunately {{courier_name}} could not complete your delivery today.</p>
 
-<p>
-  {% if collection_location %}
-    {{courier.name}} has informed us that your package has been safely dropped off to
-    <b>{{collection_location}}</b> for immediate collection.
-  {% else %}
-    Your delivery driver should have left a card with details on the location
-    where your package can be collected from. For more information, please
-    contact the carrier directly quoting the details below:
-  {% endif %}
-</p>
+<p>For more delivery options or more specific queries regarding your delivery, contact {{courier_name}} quoting these details:</p>
 
 <p>
-  <strong style="font-weight:bold;">
-    Carrier: {{courier_name}}
-    <br/>
-    Carrier Phone Number: {{courier_contact_destination}}
-    <br/>
-    Carrier Tracking Number: {{carrier_shipment_reference}}
-  <strong>
+  Carrier: {{courier_name}}<br>
+  Phone Number: {{courier_contact_destination}}<br>
+  Courier Tracking Number: {{carrier_shipment_reference}}
 </p>
+
+<p>If the courier is unable to assist you with your enquiries, please contact {{merchant_name}} directly.</p>
 
 <p>
-  View more tracking history and collection details below.
+  Sincerely,<br>
+  {{merchant_name}}
 </p>
-
-<a href={{tracking_url}}>Tracking & Collection</a>
