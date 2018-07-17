@@ -48,4 +48,4 @@
   如速遞公司無法解決你的問題，請直接聯絡{{merchant_name}}
 
   {{merchant_name}}上
-{end_if}
+{% endif %}
