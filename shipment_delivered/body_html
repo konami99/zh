@@ -1,0 +1,13 @@
+<h1>訂單已送抵<h1>
+
+<p>{{email_greeting_identifier}}你好,</p>
+
+<p>希望你對此 {{merchant_name}} 訂單感到滿意。</p>
+
+<p>是次送貨體驗如何?</p>
+
+<p>Rate Your Experience: {{rate_url}}</p>
+
+<p>你的意見有助我們改善服務，提供更佳購物體驗。</p>
+
+<p>{{merchant_name}} 上</p>
