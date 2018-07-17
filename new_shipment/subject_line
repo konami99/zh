@@ -1,1 +1,5 @@
-Great news! Your delivery from {{merchant_name}} is on its way.
+{% if partial_shipment %}
+  Your order from {{merchant_name}} has been shipped partially
+{% else %} 
+  Great news! Your delivery from {{merchant_name}} is on its way.
+{% endif %}
